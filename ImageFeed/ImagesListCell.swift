@@ -10,7 +10,7 @@ import UIKit
 final class ImagesListCell: UITableViewCell {
     static let reuseIdentifier = "ImagesListCell"
     
-    @IBOutlet private weak var labelOfDate: UILabel!
+    @IBOutlet private weak var dateLabel: UILabel!
     @IBOutlet private weak var cellImageView: UIImageView!
     @IBOutlet private weak var likeButton: UIButton!
     
@@ -21,11 +21,11 @@ final class ImagesListCell: UITableViewCell {
     }
     
     func labelOfDateInCell(date: String) {
-        labelOfDate.text = date
+        dateLabel.text = date
     }
     
     func configureLikeButton(cellIndex: Int) {
-        let imageName = cellIndex % 2 == 0 ? "noLike" : "like"
-        likeButton.setImage(UIImage(named: imageName), for: .normal)
+        let imageResource: ImageResource = cellIndex % 2 == 0 ? .noLike : .like
+        likeButton.setImage(UIImage(resource: imageResource), for: .normal)
     }
 }

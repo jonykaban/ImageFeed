@@ -68,7 +68,7 @@
                                         <color key="backgroundColor" name="YP Black"/>
                                         <connections>
                                             <outlet property="cellImageView" destination="8Wu-62-dsJ" id="eTA-dI-wir"/>
-                                            <outlet property="labelOfDate" destination="KwA-NE-svc" id="orJ-jz-Ohz"/>
+                                            <outlet property="dateLabel" destination="KwA-NE-svc" id="VvU-P9-PzM"/>
                                             <outlet property="likeButton" destination="8Ee-Q2-oEQ" id="2zY-vL-uec"/>
                                         </connections>
                                     </tableViewCell>
