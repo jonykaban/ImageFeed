@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		A022D3FE2FA871CB00C3BFBE /* ImageFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DFE48B2FBAF991000987C1 /* ImageFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -21,6 +21,16 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		A00AA3D22FBAEDBA00936016 /* Profile */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		A00AA3D32FBAEDEC00936016 /* ImageList */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ImageList;
+			sourceTree = "<group>";
+		};
 		A022D4002FA871CB00C3BFBE /* ImageFeed */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -46,16 +56,10 @@
 			isa = PBXGroup;
 			children = (
 				A022D4002FA871CB00C3BFBE /* ImageFeed */,
-				A022D3FF2FA871CB00C3BFBE /* Products */,
+				A00AA3D22FBAEDBA00936016 /* Profile */,
+				A00AA3D32FBAEDEC00936016 /* ImageList */,
+				A0DFE48B2FBAF991000987C1 /* ImageFeed.app */,
 			);
-			sourceTree = "<group>";
-		};
-		A022D3FF2FA871CB00C3BFBE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A022D3FE2FA871CB00C3BFBE /* ImageFeed.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,13 +78,15 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				A00AA3D22FBAEDBA00936016 /* Profile */,
+				A00AA3D32FBAEDEC00936016 /* ImageList */,
 				A022D4002FA871CB00C3BFBE /* ImageFeed */,
 			);
 			name = ImageFeed;
 			packageProductDependencies = (
 			);
 			productName = ImageFeed;
-			productReference = A022D3FE2FA871CB00C3BFBE /* ImageFeed.app */;
+			productReference = A0DFE48B2FBAF991000987C1 /* ImageFeed.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +114,7 @@
 			mainGroup = A022D3F52FA871CB00C3BFBE;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = A022D3FF2FA871CB00C3BFBE /* Products */;
+			productRefGroup = A022D3F52FA871CB00C3BFBE;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

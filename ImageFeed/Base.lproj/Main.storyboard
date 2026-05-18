@@ -96,12 +96,84 @@
             </objects>
             <point key="canvasLocation" x="139.13043478260872" y="136.60714285714286"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="b1m-ax-IdK">
+            <objects>
+                <viewController title="Profile" id="Ebf-lO-6lK" customClass="ProfileViewController" customModule="ImageFeed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zd1-2B-hds">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_photo" translatesAutoresizingMaskIntoConstraints="NO" id="DAb-cG-7YM" userLabel="Avatar Image View">
+                                <rect key="frame" x="16" y="150" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="2kP-Mo-q1m"/>
+                                    <constraint firstAttribute="width" constant="70" id="PH5-Bj-VnJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Екатерина Новикова" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDv-P1-rta" userLabel="Name Label">
+                                <rect key="frame" x="16" y="228" width="398" height="27.666666666666657"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="textColor" name="YP White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@ekaterina_nov" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MX1-v8-7lB" userLabel="Lohin Name Lable">
+                                <rect key="frame" x="16" y="263.66666666666669" width="398" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" name="YP Gray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, world" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKZ-K1-qZy" userLabel="Desription Label">
+                                <rect key="frame" x="16" y="287.66666666666669" width="398" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" name="YP White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eyc-oY-AXL">
+                                <rect key="frame" x="370" y="163" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Qyw-WC-T2j"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="logout"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LOu-KH-HJk"/>
+                        <color key="backgroundColor" name="YP Black"/>
+                        <constraints>
+                            <constraint firstItem="DAb-cG-7YM" firstAttribute="leading" secondItem="LOu-KH-HJk" secondAttribute="leading" constant="16" id="1nj-xw-gjX"/>
+                            <constraint firstItem="CDv-P1-rta" firstAttribute="top" secondItem="DAb-cG-7YM" secondAttribute="bottom" constant="8" id="4TY-bz-7cb"/>
+                            <constraint firstItem="LOu-KH-HJk" firstAttribute="trailing" secondItem="CDv-P1-rta" secondAttribute="trailing" constant="16" id="4fR-QS-OVn"/>
+                            <constraint firstItem="yKZ-K1-qZy" firstAttribute="leading" secondItem="LOu-KH-HJk" secondAttribute="leading" constant="16" id="6A1-0s-cWz"/>
+                            <constraint firstItem="MX1-v8-7lB" firstAttribute="leading" secondItem="CDv-P1-rta" secondAttribute="leading" id="I2N-eJ-bQl"/>
+                            <constraint firstItem="MX1-v8-7lB" firstAttribute="leading" secondItem="LOu-KH-HJk" secondAttribute="leading" constant="16" id="Wjg-mj-gdB"/>
+                            <constraint firstItem="DAb-cG-7YM" firstAttribute="top" secondItem="LOu-KH-HJk" secondAttribute="top" constant="32" id="XRK-dg-gXt"/>
+                            <constraint firstItem="LOu-KH-HJk" firstAttribute="trailing" secondItem="yKZ-K1-qZy" secondAttribute="trailing" constant="16" id="bv1-wN-m94"/>
+                            <constraint firstItem="CDv-P1-rta" firstAttribute="leading" secondItem="LOu-KH-HJk" secondAttribute="leading" constant="16" id="dWv-dd-feG"/>
+                            <constraint firstItem="Eyc-oY-AXL" firstAttribute="top" secondItem="LOu-KH-HJk" secondAttribute="top" constant="45" id="j0K-FO-rVA"/>
+                            <constraint firstItem="Eyc-oY-AXL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DAb-cG-7YM" secondAttribute="trailing" constant="8" symbolic="YES" id="kmR-nd-moh"/>
+                            <constraint firstItem="yKZ-K1-qZy" firstAttribute="top" secondItem="MX1-v8-7lB" secondAttribute="bottom" constant="8" id="nWn-Ee-Zo7"/>
+                            <constraint firstItem="LOu-KH-HJk" firstAttribute="trailing" secondItem="Eyc-oY-AXL" secondAttribute="trailing" constant="16" id="p8p-nj-NP1"/>
+                            <constraint firstItem="MX1-v8-7lB" firstAttribute="top" secondItem="CDv-P1-rta" secondAttribute="bottom" constant="8" id="pim-nn-ITH"/>
+                            <constraint firstItem="LOu-KH-HJk" firstAttribute="trailing" secondItem="MX1-v8-7lB" secondAttribute="trailing" constant="16" id="voP-ui-ODN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="06p-ck-ymr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-699.06976744186045" y="135.83690987124464"/>
+        </scene>
     </scenes>
     <resources>
         <image name="10" width="1280" height="852"/>
         <image name="like" width="30" height="27"/>
+        <image name="logout" width="20" height="22"/>
+        <image name="profile_photo" width="70" height="70"/>
         <namedColor name="YP Black">
             <color red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="YP Gray">
+            <color red="0.68235294117647061" green="0.68627450980392157" blue="0.70588235294117652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="YP White">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
