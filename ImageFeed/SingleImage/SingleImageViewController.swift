@@ -9,6 +9,9 @@ import UIKit
 final class SingleImageViewController: UIViewController {
     @IBOutlet weak private var singleImageView: UIImageView!
     
+    @IBOutlet weak private var scrollView: UIScrollView!
+    
+    
     var image: UIImage?
     
     override func viewDidLoad() {
