@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		A0DFE48B2FBAF991000987C1 /* ImageFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DFE48B2FBAF991000987C1 /* ImageFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ImageFeed.app; path = "/Users/nikitafedorov/Desktop/dev/ImageFeed/build/Debug-iphoneos/ImageFeed.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -21,16 +21,6 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A00AA3D22FBAEDBA00936016 /* Profile */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		A00AA3D32FBAEDEC00936016 /* ImageList */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ImageList;
-			sourceTree = "<group>";
-		};
 		A022D4002FA871CB00C3BFBE /* ImageFeed */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -56,9 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				A022D4002FA871CB00C3BFBE /* ImageFeed */,
-				A00AA3D22FBAEDBA00936016 /* Profile */,
-				A00AA3D32FBAEDEC00936016 /* ImageList */,
-				A0DFE48B2FBAF991000987C1 /* ImageFeed.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,8 +65,6 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				A00AA3D22FBAEDBA00936016 /* Profile */,
-				A00AA3D32FBAEDEC00936016 /* ImageList */,
 				A022D4002FA871CB00C3BFBE /* ImageFeed */,
 			);
 			name = ImageFeed;
