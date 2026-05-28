@@ -7,18 +7,20 @@
 import UIKit
 
 final class SingleImageViewController: UIViewController {
-    var image: UIImage? {
-        didSet {
-            guard let image else { return }
-
-            singleImageView.image = image
-            singleImageView.frame.size = image.size
-            rescaleAndCenterImageInScrollView(image: image)
-        }
-    }
+    var image: UIImage?
     
     @IBOutlet weak private var singleImageView: UIImageView!
     @IBOutlet weak private var scrollView: UIScrollView!
+    
+    @IBAction func didTapShareButton(_ sender: Any) {
+        guard let image else { return }
+        
+        let share = UIActivityViewController(
+            activityItems: [image],
+            applicationActivities: nil
+        )
+        present(share, animated: true, completion: nil)
+    }
     
     @IBAction func didTapBackButton(_ sender: Any) {
             dismiss(animated: true, completion: nil)

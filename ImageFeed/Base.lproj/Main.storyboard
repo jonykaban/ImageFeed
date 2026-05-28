@@ -211,7 +211,7 @@
                                     <outlet property="delegate" destination="9A8-JW-tfO" id="SeB-Cz-Npb"/>
                                 </connections>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3x9-o1-jrd">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3x9-o1-jrd" userLabel="back_button">
                                 <rect key="frame" x="8" y="68" width="48" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="3wy-Yp-2QY"/>
@@ -223,6 +223,18 @@
                                     <action selector="didTapBackButton:" destination="9A8-JW-tfO" eventType="touchUpInside" id="FeT-Ap-7jn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6y-p5-Hch" userLabel="share_button">
+                                <rect key="frame" x="190" y="831" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="6aw-bd-K5x"/>
+                                    <constraint firstAttribute="height" constant="50" id="du2-iq-uiy"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="share"/>
+                                <connections>
+                                    <action selector="didTapShareButton:" destination="9A8-JW-tfO" eventType="touchUpInside" id="bfE-Ij-psZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="a3C-hg-z8e"/>
                         <color key="backgroundColor" name="YP Black"/>
@@ -232,7 +244,9 @@
                             <constraint firstItem="k88-AT-wfb" firstAttribute="bottom" secondItem="ywT-bD-Hnn" secondAttribute="bottom" id="KxZ-4U-2HW"/>
                             <constraint firstItem="a3C-hg-z8e" firstAttribute="trailing" secondItem="k88-AT-wfb" secondAttribute="trailing" id="SNa-QE-FKS"/>
                             <constraint firstItem="3x9-o1-jrd" firstAttribute="top" secondItem="a3C-hg-z8e" secondAttribute="top" constant="9" id="c89-FX-D98"/>
+                            <constraint firstItem="a3C-hg-z8e" firstAttribute="bottom" secondItem="K6y-p5-Hch" secondAttribute="bottom" constant="17" id="ebU-ro-9Vc"/>
                             <constraint firstItem="k88-AT-wfb" firstAttribute="leading" secondItem="a3C-hg-z8e" secondAttribute="leading" id="h9L-S6-ql1"/>
+                            <constraint firstItem="K6y-p5-Hch" firstAttribute="centerX" secondItem="a3C-hg-z8e" secondAttribute="centerX" id="lST-RS-mQZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="S2g-tB-fhg"/>
@@ -253,6 +267,7 @@
         <image name="like" width="30" height="27"/>
         <image name="logout" width="20" height="22"/>
         <image name="profile_photo" width="70" height="70"/>
+        <image name="share" width="50" height="50"/>
         <image name="tab_editorial_active" width="30" height="30"/>
         <image name="tab_profile_active" width="30" height="30"/>
         <namedColor name="YP Black">
