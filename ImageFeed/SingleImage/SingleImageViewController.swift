@@ -23,8 +23,8 @@ final class SingleImageViewController: UIViewController {
     }
     
     @IBAction func didTapBackButton(_ sender: Any) {
-            dismiss(animated: true, completion: nil)
-        }
+        dismiss(animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,8 +35,8 @@ final class SingleImageViewController: UIViewController {
         singleImageView.image = image
         singleImageView.frame.size = image.size
         rescaleAndCenterImageInScrollView(image: image)
+        updateContentInset()
         
-      
     }
     
     private func rescaleAndCenterImageInScrollView(image: UIImage) {
@@ -55,10 +55,29 @@ final class SingleImageViewController: UIViewController {
         let y = (newContentSize.height - visibleRectSize.height) / 2
         scrollView.setContentOffset(CGPoint(x: x, y: y), animated: false)
     }
+    
+    private func updateContentInset() {
+        let scrollViewSize = scrollView.bounds.size
+        let imageViewSize = singleImageView.frame.size
+        
+        let verticalInset = max(0, (scrollViewSize.height - imageViewSize.height) / 2)
+        let horizontalInset = max(0, (scrollViewSize.width - imageViewSize.width) / 2)
+        
+        scrollView.contentInset = UIEdgeInsets(
+            top: verticalInset,
+            left: horizontalInset,
+            bottom: verticalInset,
+            right: horizontalInset
+        )
+    }
 }
 
 extension SingleImageViewController: UIScrollViewDelegate {
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return singleImageView
+    }
+    
+    func scrollViewDidZoom(_ scrollView: UIScrollView) {
+        updateContentInset()
     }
 }
