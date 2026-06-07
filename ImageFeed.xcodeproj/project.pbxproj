@@ -29,11 +29,6 @@
 			path = ImageFeed;
 			sourceTree = "<group>";
 		};
-		A02F617C2FD1575300E03453 /* Constants */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Constants;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +47,6 @@
 			children = (
 				A022D4002FA871CB00C3BFBE /* ImageFeed */,
 				A02F61622FD154AB00E03453 /* ImageFeed.app */,
-				A02F617C2FD1575300E03453 /* Constants */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,7 +67,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				A022D4002FA871CB00C3BFBE /* ImageFeed */,
-				A02F617C2FD1575300E03453 /* Constants */,
 			);
 			name = ImageFeed;
 			packageProductDependencies = (
