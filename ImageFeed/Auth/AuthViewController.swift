@@ -8,5 +8,5 @@ import UIKit
 
 
 final class AuthViewController: UIViewController {
-    
+    let showWebView = "ShowWebView"
 }
