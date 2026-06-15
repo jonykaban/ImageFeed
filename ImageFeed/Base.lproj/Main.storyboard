@@ -98,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042.3255813953488" y="-835.62231759656663"/>
+            <point key="canvasLocation" x="1100" y="-836"/>
         </scene>
         <!--Profile-->
         <scene sceneID="b1m-ax-IdK">
@@ -166,7 +166,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06p-ck-ymr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042.3255813953488" y="-141.63090128755366"/>
+            <point key="canvasLocation" x="1100" y="-142"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7wV-Sr-9Lw">
@@ -188,7 +188,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7jv-6c-qjo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="199.53488372093022" y="-534.33476394849788"/>
+            <point key="canvasLocation" x="200" y="-505"/>
         </scene>
         <!--Single Image View Controller-->
         <scene sceneID="lu5-sO-0te">
@@ -258,7 +258,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fg4-EH-tyg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1893.4883720930231" y="-835.62231759656663"/>
+            <point key="canvasLocation" x="1955" y="-836"/>
         </scene>
         <!--Auth View Controller-->
         <scene sceneID="xwL-kX-WqE">
@@ -311,7 +311,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bmV-uL-eKG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1404" y="-534"/>
+            <point key="canvasLocation" x="1098" y="-1624"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XZA-X5-bXl">
@@ -329,7 +329,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6dt-2D-0HS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2304" y="-534"/>
+            <point key="canvasLocation" x="200" y="-1624"/>
         </scene>
         <!--Web View View Controller-->
         <scene sceneID="e6W-1F-Psk">
@@ -338,14 +338,38 @@
                     <view key="view" contentMode="scaleToFill" id="2Bm-lE-y8i" customClass="web">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mcY-g5-Loi">
+                                <rect key="frame" x="20" y="172" width="390" height="760"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="YP White"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sr3-GM-9b6">
+                                <rect key="frame" x="0.0" y="172" width="430" height="4"/>
+                                <color key="progressTintColor" name="YP Black"/>
+                            </progressView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ING-er-EJc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sr3-GM-9b6" firstAttribute="leading" secondItem="ING-er-EJc" secondAttribute="leading" id="21y-iq-m2O"/>
+                            <constraint firstItem="ING-er-EJc" firstAttribute="trailing" secondItem="sr3-GM-9b6" secondAttribute="trailing" id="IyU-bB-ejs"/>
+                            <constraint firstItem="sr3-GM-9b6" firstAttribute="top" secondItem="ING-er-EJc" secondAttribute="top" id="mGM-gT-um4"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SQb-cJ-zRh"/>
+                    <connections>
+                        <outlet property="progressView" destination="mcY-g5-Loi" id="2tC-s1-s7d"/>
+                        <outlet property="webView" destination="mcY-g5-Loi" id="nIS-QV-fTq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bAx-TI-wHO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-547" y="-534"/>
+            <point key="canvasLocation" x="1955" y="-1624"/>
         </scene>
     </scenes>
     <resources>
