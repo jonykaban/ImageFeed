@@ -363,7 +363,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="SQb-cJ-zRh"/>
                     <connections>
-                        <outlet property="progressView" destination="mcY-g5-Loi" id="2tC-s1-s7d"/>
+                        <outlet property="progressView" destination="sr3-GM-9b6" id="adS-hu-hTX"/>
                         <outlet property="webView" destination="mcY-g5-Loi" id="nIS-QV-fTq"/>
                     </connections>
                 </viewController>
