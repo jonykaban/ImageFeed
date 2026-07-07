@@ -35,7 +35,7 @@ final class OAuth2Service {
         return request
     }
     
-    func fetchOAuthToken(code: String, completion: @escaping (Result<String, Error>) -> Void) {
+    func fetchAuthToken(code: String, completion: @escaping (Result<String, Error>) -> Void) {
         guard let request = makeOAuthTokenRequest(code: code) else {
             print("Invalid OAuth token request")
             completion(.failure(NetworkError.invalidRequest))
@@ -51,6 +51,7 @@ final class OAuth2Service {
                     
                     let token = response.accessToken
                     self?.tokenStorage.token = token
+                    completion(.success(token))
                 } catch {
                     print("OAuth token request error: ", error)
                     completion(.failure(error))

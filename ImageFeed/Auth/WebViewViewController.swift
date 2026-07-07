@@ -28,10 +28,7 @@ final class WebViewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         webView.navigationDelegate = self
-        
         updateProgress()
-        
-        
         loadAuthView()
     }
     
@@ -76,6 +73,7 @@ final class WebViewViewController: UIViewController {
     
     private func loadAuthView() {
         guard var urlComponents = URLComponents(string: WebViewConstants.unsplashAuthorizeURLString) else {
+            print("Failed to create URLComponents from string: \(WebViewConstants.unsplashAuthorizeURLString)")
             return
         }
         
@@ -83,7 +81,7 @@ final class WebViewViewController: UIViewController {
             URLQueryItem(name: "client_id", value: Constants.accessKey),
             URLQueryItem(name: "redirect_uri", value: Constants.redirectURI),
             URLQueryItem(name: "response_type", value: "code"),
-            URLQueryItem(name: "scope", value: Constants.acessScope),
+            URLQueryItem(name: "scope", value: Constants.accessScope)
         ]
         
         guard let url = urlComponents.url else { return }
