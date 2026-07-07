@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A065B1142FD6A935003FE921 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A065B1132FD6A935003FE921 /* WebKit.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		A0DFE48B2FBAF991000987C1 /* ImageFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ImageFeed.app; path = "/Users/nikitafedorov/Desktop/dev/ImageFeed/build/Debug-iphoneos/ImageFeed.app"; sourceTree = "<absolute>"; };
+		A02F61622FD154AB00E03453 /* ImageFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A065B1132FD6A935003FE921 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A065B1142FD6A935003FE921 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,7 +52,17 @@
 			isa = PBXGroup;
 			children = (
 				A022D4002FA871CB00C3BFBE /* ImageFeed */,
+				A02F61622FD154AB00E03453 /* ImageFeed.app */,
+				A065B1122FD6A935003FE921 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		A065B1122FD6A935003FE921 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A065B1132FD6A935003FE921 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,7 +87,7 @@
 			packageProductDependencies = (
 			);
 			productName = ImageFeed;
-			productReference = A0DFE48B2FBAF991000987C1 /* ImageFeed.app */;
+			productReference = A02F61622FD154AB00E03453 /* ImageFeed.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
